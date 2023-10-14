@@ -11,7 +11,7 @@ export const Navbar = () => {
         <div className='flex items-center gap-x-12'>
           <p className='text-black'>Saturday, May 3, 2023</p>
           <div className='relative'>
-            <div className='bg-red-500 absolute top-0 text-white left-[-15px] h-6 w-6 flex items-center justify-center rounded-full'>
+            <div className='bg-red-500 absolute top-0 shadow-sm text-white left-[-15px] h-6 w-6 flex items-center justify-center rounded-full'>
               <span className='text-[12px]'>2</span>
             </div>
             <div className='border rounded-xl p-2'>

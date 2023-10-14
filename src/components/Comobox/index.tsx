@@ -31,7 +31,7 @@ export function ComboboxComp() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-full justify-between border-none"
+          className="w-full justify-between border-none text-lg"
         >
           <div className="flex items-center gap-4">
             <MapPinIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />

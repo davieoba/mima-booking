@@ -28,7 +28,7 @@ export const DestinationCard = ({ img, title, price, rating, description }: Dest
             <p>{rating}/5</p>
           </div>
         </div>
-        <p className="text-base text-slate-300 font-normal text-clip truncate max-w-[10rem]">
+        <p className="text-base text-[#686868] font-normal text-clip truncate max-w-[10rem]">
           {description}
         </p>
         <p className="text-black font-medium">{price}</p>
@@ -44,7 +44,7 @@ export const OfferCard = ({ img, title, location, price }: OfferProps) => {
 
       <article className="space-y-4 py-4 w-full">
         <h3 className="font-medium text-xl">{title}</h3>
-        <div className="flex items-center gap-x-2 text-slate-300">
+        <div className="flex items-center gap-x-2 text-[#686868]">
           <MapPinIcon className="" />
           <p className="text-base">{location}</p>
         </div>
@@ -52,11 +52,11 @@ export const OfferCard = ({ img, title, location, price }: OfferProps) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <p className="text-lg text-black">{price}</p>
-            <span className="text-slate-300 text-base">/night</span>
+            <span className="text-[#686868] text-base">/night</span>
           </div>
 
           <div className="border rounded-xl h-10 w-10 flex items-center justify-center">
-            <HeartIcon className="h-6 w-6 text-slate-300" />
+            <HeartIcon className="h-6 w-6 text-[#686868]" />
           </div>
         </div>
       </article>

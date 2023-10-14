@@ -6,3 +6,12 @@
 body {
  
 }
+
+.sidebar-active{
+  @apply text-blue-950 relative font-medium;
+}
+
+.sidebar-active::before{
+  content: '';
+  @apply absolute left-[-15px] h-[7px] w-[7px] text-blue-950 bg-blue-950 rounded-full;
+}

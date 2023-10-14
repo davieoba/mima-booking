@@ -16,7 +16,7 @@ export const SelectGroupComp = () => {
   return (
     <Popover>
       <PopoverTrigger className="w-full">
-        <Button className="flex w-full gap-x-2 items-center justify-between bg-white hover:bg-white">
+        <Button className="flex w-full gap-x-2 items-center justify-between text-lg bg-white hover:bg-white">
           <div className="flex items-center gap-x-4">
             <User className="h-4 w-4 opacity-50 text-black" />
             {adult > 0 ? (

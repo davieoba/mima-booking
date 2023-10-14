@@ -2,15 +2,15 @@
 
 import Image from 'next/image'
 import Slider from 'react-slick'
+import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
 import { Navbar } from '@/components/Navbar'
 import { Sidebar } from '@/components/Sidebar'
-import Hero from 'public/assets/img/hero-bg.webp'
 import { SearchBar } from '@/components/SearchBar'
-import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
-import { destinationTravel } from '@/globals/destination-data'
 import { DestinationCard, OfferCard } from '@/components/Card'
+import { destinationTravel } from '@/globals/destination-data'
 import { bestOffers } from '@/globals/offer-data'
+import Hero from 'public/assets/img/hero-bg.webp'
 
 export default function Home() {
   const settings = {
