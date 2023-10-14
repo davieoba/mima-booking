@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 
-body {
- 
-}
-
 .sidebar-active{
   @apply text-blue-950 relative font-medium;
 }

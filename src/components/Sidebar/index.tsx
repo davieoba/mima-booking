@@ -6,8 +6,8 @@ import { GripIcon, MailIcon, HeartIcon, SettingsIcon, CompassIcon } from "lucide
 export const Sidebar = () => {
   const styles = {
     icons: `h-6 w-6`,
-    container: `flex items-center gap-x-6`,
-    link: `inline-block text-lg`
+    link: `inline-block relative`,
+    container: `inline-block text-lg relative flex items-center gap-x-6`
   }
 
   return (
@@ -22,38 +22,38 @@ export const Sidebar = () => {
 
       <div>
         <ul className="space-y-8 text-[#686868]">
-          <li className={`${styles.container} sidebar-active`}>
-            <CompassIcon className={styles.icons} />
-            <Link href='#' className={styles.link}>
-              Dashboard
+          <li>
+            <Link href='#' className={`${styles.container} sidebar-active`}>
+              <CompassIcon className={styles.icons} />
+              <span className="">Dashboard</span>
             </Link>
           </li>
 
-          <li className={styles.container}>
-            <Grip className={styles.icons} />
-            <Link href='#' className={styles.link}>
-              Explore City
+          <li>
+            <Link href='#' className={styles.container}>
+              <Grip className={styles.icons} />
+              <span className={styles.link}>Explore City</span>
             </Link>
           </li>
 
-          <li className={styles.container}>
-            <MailIcon className={styles.icons} />
-            <Link href='#' className={styles.link}>
-              Ticket
+          <li>
+            <Link href='#' className={styles.container}>
+              <MailIcon className={styles.icons} />
+              <span className={styles.link}>Ticket</span>
             </Link>
           </li>
 
-          <li className={styles.container}>
-            <HeartIcon className={styles.icons} />
-            <Link href='#' className={styles.link}>
-              Favorites
+          <li>
+            <Link href='#' className={styles.container}>
+              <HeartIcon className={styles.icons} />
+              <span className={styles.link}>Favorites</span>
             </Link>
           </li>
 
-          <li className={styles.container}>
-            <SettingsIcon className={styles.icons} />
-            <Link href='#' className={styles.link}>
-              Settings
+          <li>
+            <Link href='#' className={styles.container}>
+              <SettingsIcon className={styles.icons} />
+              <span className={styles.link}>Settings</span>
             </Link>
           </li>
         </ul>

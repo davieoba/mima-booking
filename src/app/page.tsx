@@ -23,7 +23,7 @@ export default function Home() {
 
   const styles = {
     navigation: {
-      container: `border border-[#333] flex items-center justify-center rounded-lg h-8 w-8 delay-75 text-[#333] transition-all hover:bg-blue-950 hover:text-white`,
+      container: `border border-[#333] flex items-center justify-center rounded-lg h-8 w-8 delay-75 text-[#333] transition-all hover:cursor-pointer hover:bg-blue-950 hover:text-white`,
       icon: `h-4 w-4`
     }
   }
