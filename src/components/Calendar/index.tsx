@@ -35,7 +35,7 @@ export function DatePickerWithRange({
             )}
           >
             <div className="flex items-center gap-4">
-              <CalendarIcon className="mr-2 h-4 w-4" />
+              <CalendarIcon className="mr-2 h-4 w-4 opacity-50" />
               {date?.from ? (
                 date.to ? (
                   <>

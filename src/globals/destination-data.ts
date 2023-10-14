@@ -87,10 +87,10 @@ export const destinationTravel:DestinationTravel[] = [
     description: `Saudi Arabia boasts a fascinating mix of ancient history and modern luxury, with iconic landmarks like Petra, the Red Sea's coral reefs, and the futuristic city of NEOM, providing a unique travel experience rich in culture and innovation`
   },
   {
-    img: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    title: 'Dubai, UAE',
+    img: 'https://images.unsplash.com/photo-1521292270410-a8c4d716d518?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    title: 'Swiss Alps, Switzerland',
     price: '$660,000,00',
     rating: '4',
-    description: `Saudi Arabia boasts a fascinating mix of ancient history and modern luxury, with iconic landmarks like Petra, the Red Sea's coral reefs, and the futuristic city of NEOM, providing a unique travel experience rich in culture and innovation`
+    description: `The Swiss Alps are a majestic mountain range in Switzerland, known for their stunning beauty, rugged terrain, and world-class skiing and outdoor recreational opportunities.`
   }
 ]

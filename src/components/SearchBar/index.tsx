@@ -18,7 +18,7 @@ export const SearchBar = () => {
         <div className="px-8">
           <SelectGroupComp />
         </div>
-        <Button className="rounded-lg text-lg">Search</Button>
+        <Button className="rounded-lg text-lg bg-blue-950">Search</Button>
       </div>
     </div>
   )

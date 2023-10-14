@@ -1,11 +1,10 @@
-import Image from "next/image";
-
-import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from "keen-slider/react"
 import { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+
 import { destinationTravel } from "@/globals/destination-data";
 import { DestinationCard } from "../Card";
+import 'keen-slider/keen-slider.min.css'
 
 const styles = {
   navigation: {
@@ -19,8 +18,12 @@ export const SliderComp = () => {
   const [loaded, setLoaded] = useState(false)
   const [ref, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
+    slideChanged(slider){
+      setCurrentSlide(slider.track.details.rel)
+    },
     slides: {
       perView: 3,
+      spacing: 12
     },
     created() {
       setLoaded(true)
@@ -56,7 +59,7 @@ export const SliderComp = () => {
         </div>
       )}
 
-      <div ref={ref} className="keen-slider grid grid-cols-7 gap-12 overflow-hidden">
+      <div ref={ref} className="keen-slider">
         {destinationTravel.map((destination, index) => {
           return (
             <DestinationCard
@@ -75,6 +78,7 @@ export const SliderComp = () => {
           {[
             ...Array(instanceRef.current.track.details.slides.length).keys()
           ].map((idx) => {
+            console.log({idx})
             return (
               <button
                 key={idx}
@@ -88,8 +92,6 @@ export const SliderComp = () => {
         </div>
       )}
     </div>
-
-
   )
 }
 
