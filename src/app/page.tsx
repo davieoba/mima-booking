@@ -24,6 +24,8 @@ export default function Home() {
               </div>
             </div>
           </header>
+
+          <section></section>
         </div>
       </section>
     </main>
