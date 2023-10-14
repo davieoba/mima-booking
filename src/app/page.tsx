@@ -1,25 +1,18 @@
 'use client'
 
 import Image from 'next/image'
-import Slider from 'react-slick'
-import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
 import { Navbar } from '@/components/Navbar'
 import { Sidebar } from '@/components/Sidebar'
 import { SearchBar } from '@/components/SearchBar'
-import { DestinationCard, OfferCard } from '@/components/Card'
-import { destinationTravel } from '@/globals/destination-data'
+import { OfferCard } from '@/components/Card'
 import { bestOffers } from '@/globals/offer-data'
 import Hero from 'public/assets/img/hero-bg.webp'
+import { SliderComp } from '@/components/Slider'
+
+
 
 export default function Home() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1
-  }
 
   const styles = {
     navigation: {
@@ -48,33 +41,10 @@ export default function Home() {
           </header>
 
           <section>
-            <div className='flex items-center justify-between mb-8'>
-              <h2 className='text-[2rem] font-medium'>Trending destinations</h2>
-              <div className='flex items-center gap-x-4'>
-                <div className={styles.navigation.container}>
-                  <ChevronLeftIcon className={styles.navigation.icon} />
-                </div>
-                <div className={styles.navigation.container}>
-                  <ChevronRightIcon className={styles.navigation.icon} />
-                </div>
+            <div className='overflow-hidden grid grid-cols-12'>
+              <div className='col-span-full'>
+                <SliderComp />
               </div>
-            </div>
-
-            <div className='overflow-hidden grid grid-cols-3 gap-12'>
-              {/* <Slider {...settings}> */}
-              {destinationTravel.map((destination, index) => {
-                return (
-                  <DestinationCard
-                    key={index}
-                    img={destination.img}
-                    title={destination.title}
-                    description={destination.description}
-                    price={destination.price}
-                    rating={destination.rating}
-                  />
-                )
-              })}
-              {/* </Slider> */}
             </div>
           </section>
 
@@ -89,7 +59,7 @@ export default function Home() {
             <div className='grid grid-cols-5 gap-12'>
               {bestOffers.map((offer, index) => {
                 return (
-                  <OfferCard 
+                  <OfferCard
                     key={index}
                     img={offer.img}
                     location={offer.location}

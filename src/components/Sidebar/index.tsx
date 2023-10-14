@@ -23,12 +23,12 @@ export const Sidebar = () => {
             <Image
               src='https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
               alt='user-photo'
-              className="rounded-full object-cover h-28 w-28" 
+              className="rounded-full object-cover h-28 w-28"
               width={1000}
               height={1000}
             />
             <div className="absolute z-10 h-8 w-8 bg-blue-950 rounded-full flex items-center justify-center bottom-[-12.5px] cursor-pointer">
-              <FileEdit className="h-4 w-4 text-white"/>
+              <FileEdit className="h-4 w-4 text-white" />
             </div>
           </div>
 

@@ -28,8 +28,8 @@ export const SelectGroupComp = () => {
                 }
               </div>
             ) : (
-              <span>
-                Select
+              <span className="text-black">
+                Select Group
               </span>
             )}
           </div>

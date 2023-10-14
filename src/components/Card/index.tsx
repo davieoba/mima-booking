@@ -18,7 +18,7 @@ type OfferProps = {
 
 export const DestinationCard = ({ img, title, price, rating, description }: DestinationProps) => {
   return (
-    <div className="py-4 w-full px-4 h-[200px] rounded-2xl border flex items-stretch shadow-sm bg-white gap-x-8">
+    <div className="py-4 min-w-[300px] px-4 h-[200px] rounded-2xl border flex items-stretch shadow-sm bg-white gap-x-8 keen-slider__slide">
       <Image src={img} alt={title} className="shrink-0 w-[200px] rounded-2xl object-cover" width={1000} height={1000}/>
       <article className="space-y-4 w-full">
         <div className="flex w-full items-center justify-between">
