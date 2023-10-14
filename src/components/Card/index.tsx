@@ -18,17 +18,18 @@ type OfferProps = {
 
 export const DestinationCard = ({ img, title, price, rating, description }: DestinationProps) => {
   return (
-    <div className="py-4 px-2 rounded-xl flex">
-      <Image src={img} alt={title} className="shrink-0 h-14 w-14 rounded-lg object-contain" />
-      <article className="space-y-4">
-        <div className="flex items-center justify-between">
+    <div className="py-4 w-full px-4 h-[200px] rounded-2xl border flex items-stretch shadow-sm bg-white gap-x-8">
+      <Image src={img} alt={title} className="shrink-0 w-[200px] rounded-2xl object-cover" width={1000} height={1000}/>
+      <article className="space-y-4 w-full">
+        <div className="flex w-full items-center justify-between">
           <h3 className="font-semibold text-xl">{title}</h3>
-          <div className="flex text-base items-center">
-            <Star className="" />
+          <div className="flex text-sm gap-x-2 items-center">
+            <Star className="h-4 w-4" fill="#edab56" stroke="none" />
             <p>{rating}/5</p>
           </div>
         </div>
-        <p className="text-base text-slate-300 font-normal text-ellipsis">{description}
+        <p className="text-base text-slate-300 font-normal text-clip truncate max-w-[10rem]">
+          {description}
         </p>
         <p className="text-black font-medium">{price}</p>
       </article>
@@ -38,10 +39,10 @@ export const DestinationCard = ({ img, title, price, rating, description }: Dest
 
 export const OfferCard = ({ img, title, location, price }: OfferProps) => {
   return (
-    <div className="w-full pt-2 py-4 px-2 shadow-sm rounded-xl">
-      <Image src={img} alt={title} className="object-cover h-28 w-28" />
+    <div className="w-full pt-2 py-4 px-3 rounded-3xl border shadow-sm bg-white">
+      <Image src={img} alt={title} className="object-cover h-28 w-full rounded-3xl" width={1000} height={1000}/>
 
-      <article className="space-y-4">
+      <article className="space-y-4 py-4 w-full">
         <h3 className="font-medium text-xl">{title}</h3>
         <div className="flex items-center gap-x-2 text-slate-300">
           <MapPinIcon className="" />
