@@ -1,6 +1,4 @@
 import './globals.css'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import type { Metadata } from 'next'
 import { Jost } from 'next/font/google'
 
@@ -18,6 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='/favicon.ico' sizes='any'/>
+      </head>
       <body className={jost.className}>{children}</body>
     </html>
   )
