@@ -10,7 +10,10 @@ import { bestOffers } from '@/globals/offer-data'
 import Hero from 'public/assets/img/hero-bg.webp'
 import { SliderComp } from '@/components/Slider'
 
-
+export const metadata = {
+  title: 'Mima Booking',
+  description: 'Discover Your Next Adventure: Explore our website to seamlessly book tours and hotels worldwide. Uncover unforgettable travel experiences with ease and convenience.'
+}
 
 export default function Home() {
 
