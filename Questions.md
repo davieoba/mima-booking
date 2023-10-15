@@ -40,9 +40,9 @@ return (
 - I make my code as simple to read as much as possible by giving readable and meaningful names to my variable and leaving appropriate comments when there is need for it.
 
 ## 4. Can you give some examples from your past projects?
-- E-commerce application *fullstack* [link](https://e-commerce-app-ts-nextjs.vercel.app/)
 - E-commerce application *Frontend* [link](https://glasses-delta.vercel.app/)
 - Book store application *Frontend* [link](https://watermarks-v2.vercel.app/)
+- E-commerce application *fullstack* [link](https://e-commerce-app-ts-nextjs.vercel.app/)
 
 ## 5. In your own words, explain the concept of Server-Side Rendering (SSR) and how it is implemented in Next.js.
 When working with React, we could only do Client-Side rendering that means that the application will be bundled at runtime. when a client made a request to the server the server will respond and send the react app to the client, this makes navigating pages very fast in client side rendering but it had it's limitations such as problems working with S.E.O and a concept know as *thick client*. This is one of the major issue Next.js solved. In **Server Side Rendering** all the pages are stored on the server and when a request is made, the server respondes by sending the appropriate page to the user. 
